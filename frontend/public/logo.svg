@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="truckGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Mark Group -->
+  <g transform="translate(10, 10) scale(1.0)">
+    <!-- Sprout Leaves -->
+    <path d="M 38 42 C 34 26, 42 12, 60 8 C 66 18, 64 34, 46 44 C 42 46, 39 44, 38 42 Z" fill="url(#leafGrad)" />
+    <path d="M 40 40 C 47 30, 52 20, 58 12" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.85" />
+    <path d="M 36 38 C 24 30, 22 18, 34 14 C 42 20, 42 30, 37 38 Z" fill="#059669" />
+    <path d="M 50 36 C 62 30, 72 32, 70 42 C 60 46, 52 42, 50 36 Z" fill="#34d399" />
+    <path d="M 38 42 C 40 50, 48 56, 52 62" stroke="#047857" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Truck Body -->
+    <rect x="12" y="38" width="46" height="36" rx="4" fill="url(#truckGrad)" />
+    <line x1="18" y1="47" x2="52" y2="47" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.75" />
+    <line x1="18" y1="55" x2="38" y2="55" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.4" />
+
+    <!-- Cab -->
+    <path d="M 58 48 L 74 48 C 77 48, 80 50, 83 55 L 88 64 C 89 66, 89 68, 89 71 L 89 74 L 58 74 Z" fill="url(#truckGrad)" />
+    <path d="M 64 53 L 75 53 C 77 53, 79 55, 81 58 L 84 64 L 64 64 Z" fill="#ffffff" />
+    <rect x="87" y="68" width="4" height="4" rx="1" fill="#fef08a" />
+    <rect x="10" y="73" width="80" height="4" rx="2" fill="#064e3b" />
+
+    <!-- Wheels -->
+    <circle cx="28" cy="77" r="10" fill="#0f172a" />
+    <circle cx="28" cy="77" r="6" fill="#ffffff" />
+    <circle cx="28" cy="77" r="3.5" fill="#10b981" />
+
+    <circle cx="74" cy="77" r="10" fill="#0f172a" />
+    <circle cx="74" cy="77" r="6" fill="#ffffff" />
+    <circle cx="74" cy="77" r="3.5" fill="#10b981" />
+  </g>
+
+  <!-- Typography -->
+  <text x="120" y="66" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="800" fill="#064e3b" letter-spacing="-1">Agri<tspan fill="#10b981">Fleet</tspan></text>
+  <text x="122" y="90" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#059669" letter-spacing="1.2">SMART AGRICULTURAL LOGISTICS</text>
+</svg>

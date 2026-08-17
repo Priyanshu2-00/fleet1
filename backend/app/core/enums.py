@@ -1,0 +1,91 @@
+from enum import Enum
+
+class UserRole(str, Enum):
+    FARMER = "FARMER"
+    DRIVER = "DRIVER"
+    FLEET_MANAGER = "FLEET_MANAGER"
+    ADMIN = "ADMIN"
+
+class VehicleStatus(str, Enum):
+    AVAILABLE = "AVAILABLE"
+    ASSIGNED = "ASSIGNED"
+    LOADING = "LOADING"
+    IN_TRANSIT = "IN_TRANSIT"
+    DELAYED = "DELAYED"
+    AT_PICKUP = "AT_PICKUP"
+    AT_COLLECTION_CENTER = "AT_COLLECTION_CENTER"
+    COMPLETED = "COMPLETED"
+    UNAVAILABLE = "UNAVAILABLE"
+
+class ShipmentStatus(str, Enum):
+    REQUESTED = "REQUESTED"
+    CONFIRMED = "CONFIRMED"
+    ASSIGNED = "ASSIGNED"
+    PICKUP_SCHEDULED = "PICKUP_SCHEDULED"
+    AT_PICKUP = "AT_PICKUP"
+    PICKED_UP = "PICKED_UP"
+    IN_TRANSIT = "IN_TRANSIT"
+    AT_COLLECTION_CENTER = "AT_COLLECTION_CENTER"
+    COMPLETED = "COMPLETED"
+    DELAYED = "DELAYED"
+    CANCELLED = "CANCELLED"
+    REROUTED = "REROUTED"
+    MISSED = "MISSED"
+
+class TripStatus(str, Enum):
+    PLANNED = "PLANNED"
+    ASSIGNED = "ASSIGNED"
+    IN_PROGRESS = "IN_PROGRESS"
+    DELAYED = "DELAYED"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
+
+class RouteStopStatus(str, Enum):
+    PENDING = "PENDING"
+    EN_ROUTE = "EN_ROUTE"
+    ARRIVED = "ARRIVED"
+    COMPLETED = "COMPLETED"
+    SKIPPED = "SKIPPED"
+
+class AlertType(str, Enum):
+    DELAY = "DELAY"
+    ROUTE_DEVIATION = "ROUTE_DEVIATION"
+    ETA_RISK = "ETA_RISK"
+    VEHICLE_UNAVAILABLE = "VEHICLE_UNAVAILABLE"
+    CAPACITY_ISSUE = "CAPACITY_ISSUE"
+    MISSED_PICKUP = "MISSED_PICKUP"
+
+class AlertSeverity(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class LocationType(str, Enum):
+    FARM = "FARM"
+    COLLECTION_CENTER = "COLLECTION_CENTER"
+    WAREHOUSE = "WAREHOUSE"
+    MARKET = "MARKET"
+    DEPOT = "DEPOT"
+
+class Priority(str, Enum):
+    LOW = "LOW"
+    NORMAL = "NORMAL"
+    HIGH = "HIGH"
+    URGENT = "URGENT"
+
+class DriverAvailability(str, Enum):
+    AVAILABLE = "AVAILABLE"
+    ON_TRIP = "ON_TRIP"
+    OFF_DUTY = "OFF_DUTY"
+    UNAVAILABLE = "UNAVAILABLE"
+
+class AlertStatus(str, Enum):
+    ACTIVE = "ACTIVE"
+    ACKNOWLEDGED = "ACKNOWLEDGED"
+    RESOLVED = "RESOLVED"
+    DISMISSED = "DISMISSED"
+
+class UserStatus(str, Enum):
+    ACTIVE = "ACTIVE"
+    INACTIVE = "INACTIVE"

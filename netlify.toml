@@ -1,0 +1,22 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional API proxy.
+# Uncomment and replace the URL after the FastAPI backend is deployed elsewhere.
+# Netlify cannot run the FastAPI/PostgreSQL/WebSocket backend from this file.
+#
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-backend.example.com/api/:splat"
+#   status = 200
+#   force = true
